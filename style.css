@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Work Sans;
+    text-align: center; 
+}
+.background{
+    background-color: #962ae6;
+    position: absolute;
+}
+header{
+    position:fixed;
+    top:5px;
+    width:100%;
+}
+nav{
+    background-color: #200e3d;
+}
+ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none; 
+    padding-left: 0px;/*ul comes with default padding on the left*/
+    margin-top: 0px;
+}
+li{
+   font-size: 1rem;
+   list-style :none;/*remove bullet points*/
+   padding: 10px 10px;
+}
+a.nav-link{
+    text-decoration:none;
+    color:white;
+}
+a.nav-link:hover{
+    color:#52c5ff;
+}
+#John{
+    width:90%;
+    margin-top: 100px;
+}
+h1{
+    font-size: 1.2rem;
+    margin: 20px;
+}
+h1,h3{
+    font-family: Days One;
+    font-weight: lighter;
+}
+#aboutMe{
+    background-color: white;
+    border:10px solid rgb(255 114 114 / 80%);
+    width:80%;
+    margin: 70px auto;
+    padding:30px;
+}
+#aboutMe img{
+    width:70%;
+}
+.about{
+    
+    text-align:left;
+    font-size: 0.9rem;
+    align-self: center;
+}
+#Projects h3, #Contact h3, #Contact p, #Contact label{
+    color: white;
+}
+.boxes{
+    background-color: white;
+    border-radius: 20px;
+    padding:5px;
+    width: 70%;
+    margin: 30px auto;
+}
+.boxes img{
+    width:100%;}
+.boxes h4{
+    margin:0px;
+}  
+.boxes p{
+    font-size: 0.8rem;
+}  
+.boxes button{
+    color:#962ae6;
+    border-radius: 8px;
+    border: 3px solid rgb(106, 181, 228);
+    margin-bottom: 20px;
+    padding:0px;
+}
+.boxes button:hover{
+    background-color:rgb(106, 181, 228);
+    color:white;
+}
+#Contact{
+    background-color: rgba(3,3,3,45%);;
+    padding: 50px 10px;
+    margin:3px;
+    margin-top:50px;
+}
+form{
+    width: 100%;
+    margin:50px auto;
+}
+label{
+    display:block;
+    text-align: left;
+}
+input, textarea, form button{
+    background-color: white;
+    border-radius:5px;
+    display:block;
+    padding:10px;
+    width:100%;
+    border:none;
+    margin: 5px 0px 15px 0px;
+}
+.submit{/*I put the submit button in a seperate div with the class submit - in order to be able to align it to the right*/
+    display:flex;
+    justify-content:right;
+}
+form button{
+    background-color: #9ed4ed;
+    text-transform: uppercase;
+    color:#1d3d5f;
+    width:120px;
+}
+form button:hover{
+    background-color: #000000;
+    color:#ffffff;
+}
+footer{
+    background-color: #1f2027;
+    height: 20px;
+}
+@media only screen and (min-width: 340Px){
+    #John{width:300px;}
+    
+}
+@media only screen and (min-width:630px){
+    form{
+        display:flex;
+    }
+    form div{
+        flex: 50%;
+        margin:0px 10px 0px 10px;
+    }
+    #aboutMe{
+        width:70%;
+    }
+    #Projects{width:65%;
+        margin:auto;
+    }
+}
+@media only screen and (min-width:860px){
+    #aboutMe>div{
+        display:flex;
+    }
+    .aboutimg{
+        flex: 40%;
+        align-self:center;
+    }
+    .about{
+        flex: 60%;
+    }
+    #aboutMe img{
+        width:90%;
+    }
+   
+}
+@media only screen and (min-width: 1200px){
+    #Projects>div{
+        display:flex;
+    }
+    .boxes{
+        flex-grow:1;
+        margin: 20px;
+    }
+    form{
+        width:70%;
+    }
+}
